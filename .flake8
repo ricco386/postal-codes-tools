@@ -1,0 +1,9 @@
+[flake8]
+statistics = True
+show_source = True
+max-line-length = 120
+#ignore =
+    # F401: module imported but unused
+    # F401,
+    # E722: do not use bare except
+    # E722,
