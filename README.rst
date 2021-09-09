@@ -17,7 +17,11 @@ if it matches the postal code format.
 Installation
 ------------
 
-You can install the package latest development version from the git repository::
+Install the released version::
+
+    pip install https://gitlab.nbs.sk/ofi/postal-codes-tools/-/archive/v1.0.0/postal-codes-tools-v1.0.0.zip --trusted-host gitlab.nbs.sk
+
+Alternatively you can install the package latest development version from the git repository::
 
     pip install https://gitlab.nbs.sk/ofi/postal-codes-tools/-/archive/master/postal-codes-tools-master.zip --trusted-host gitlab.nbs.sk
 
