@@ -22,7 +22,7 @@ POSTAL_CODES_REGEX = {
     "BR": r"^[0-9]{5}-[0-9]{3}$",
     "BT": r"^\d{5}$",
     "BY": r"^\d{6}$",
-    "CA": r"^(?!.*[DFIOQU])[A-VXY][0-9][A-Z] +?[0-9][A-Z][0-9]$",
+    "CA": r"^[ABCEGHJ-NPRSTVXY]\d[ABCEGHJ-NPRSTV-Z][ -]?\d[ABCEGHJ-NPRSTV-Z]\d$",
     "CC": r"^(6799)$",
     "CH": r"^\d{4}$",
     "CL": r"^\d{7}$",
@@ -33,7 +33,7 @@ POSTAL_CODES_REGEX = {
     "CV": r"^\d{4}$",
     "CX": r"^(6798)$",
     "CY": r"^\d{4}$",
-    "CZ": r"(^[0-9]{3} [0-9]{2}$)|(^[0-9]{5}$)",
+    "CZ": r"(^[0-9]{3} [0-9]{2}|[0-9]{5}$)",
     "DE": r"^\d{5}$",
     "DK": r"^\d{4}$",
     "DO": r"^\d{5}$",
@@ -68,7 +68,7 @@ POSTAL_CODES_REGEX = {
     "HT": r"^(?:HT)(\d{4})$",
     "HU": r"^\d{4}$",
     "ID": r"^\d{5}$",
-    "IE": r"^STRNG_LTN_EXT_255$",
+    "IE": r"(?:^[AC-FHKNPRTV-Y][0-9]{2}|D6W)[ -]?[0-9AC-FHKNPRTV-Y]{4}$",
     "IL": r"^\d{7}$",
     "IM": r"(^(IM)([0-9][0-9A-HJKPS-UW]?$)|(^[A-HK-Y][0-9][0-9ABEHMNPRV-Y]?) [0-9][ABD-HJLNP-UW-Z]{2}$)",
     "IN": r"^\d{6}$",
@@ -184,7 +184,7 @@ POSTAL_CODES_REGEX = {
     "PM": r"^\d{5}$",
     # end of french territories
     # Monaco (98000)
-    "MC": r"^/d{5}$",
+    "MC": r"^\d{5}$",
     # Puerto Rico (US system)
     "PR": r"^[0-9]{5}(?:-[0-9]{4})?$",
     # Svaldbard and Jan Mayen (Norway system)
