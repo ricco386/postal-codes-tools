@@ -1,13 +1,6 @@
 Postal Codes Tools
 ##################
 
-.. image:: https://gitlab.nbs.sk/ofi/postal-codes-tools/badges/master/pipeline.svg
-   :alt: pipeline status
-   :target: https://gitlab.nbs.sk/ofi/postal-codes-tools/-/pipelines
-
-.. image:: https://gitlab.nbs.sk/ofi/postal-codes-tools/badges/master/coverage.svg
-   :alt: coverage report
-
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
    :target: https://github.com/psf/black
 
