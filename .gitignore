@@ -111,6 +111,9 @@ logs/*
 # pycharms
 .idea/
 
+# Gitlab
+.gitlab-ci.yml
+
 # Custom
 .project
 .pydevproject

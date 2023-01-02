@@ -34,7 +34,7 @@ setup(
     author="Richard Kellner",
     author_email="richard.kellner@nbs.sk",
     license="MIT",
-    url="https://gitlab.nbs.sk/ofi/postal-codes-tools",
+    url="https://github.com/ricco386/postal-codes-tools",
     packages=find_packages(),
     setup_requires=["pytest-runner"],
     tests_require=["pytest"],

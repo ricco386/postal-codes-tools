@@ -14,16 +14,17 @@ Postal Codes Tools
 Library that helps working with different postal codes. Purpose of this library is to validate string
 if it matches the postal code format.
 
+Postal code format checking is based on European Central Bank - `List of postal code formatting rules and regular
+expressions per country <https://www.ecb.europa.eu/stats/money/aggregates/anacredit/shared/pdf/List_postal_code_formatting_rules_and_regular_expressions.xlsx>`_
+spreadsheet.
+
+
 Installation
 ------------
 
 Install the released version::
 
-    pip install https://gitlab.nbs.sk/ofi/postal-codes-tools/-/archive/v1.0.0/postal-codes-tools-v1.0.0.zip --trusted-host gitlab.nbs.sk
-
-Alternatively you can install the package latest development version from the git repository::
-
-    pip install https://gitlab.nbs.sk/ofi/postal-codes-tools/-/archive/master/postal-codes-tools-master.zip --trusted-host gitlab.nbs.sk
+    pip install postal-codes-tools
 
 Development
 -----------
@@ -34,6 +35,23 @@ Clone a repository locally and make sure you work in your own branch and once yo
 create pull request. All new code should be covered with tests. We try to use test driven development for the project.
 
 **If you find a bug feel free to create an issue with description**, how ever we appreciate even more if you create failing test.
+
+Release
+-------
+
+Release is done via `twine <https://pypi.org/project/twine/>`_. The whole package is uploaded in the form of .dist file.
+
+To create .dist file use command::
+
+    python setup.py sdist bdist_wheel
+
+Now our binary .dist file is created, now we need to upload it using the below command::
+
+    python -m twine dist/*
+
+Alternatively if you want to selfhost in a custom PyPI repo you can also upload there as well::
+
+    python -m twine upload--repository-url https://gitlab.com/custom/repo/path dist/* --cert /custom/cert
 
 
 Testing
