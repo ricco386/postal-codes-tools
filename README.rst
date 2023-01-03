@@ -11,6 +11,10 @@ Postal code format checking is based on European Central Bank - `List of postal 
 expressions per country <https://www.ecb.europa.eu/stats/money/aggregates/anacredit/shared/pdf/List_postal_code_formatting_rules_and_regular_expressions.xlsx>`_
 spreadsheet version 1.1.
 
+Intention of the library is to keep version number same as the ECB spreadsheet, eg. v1.1.0, so it is easy the track
+regex and ECB changes in the spreadsheet change log. Just the last number, eg. v1.1.1 can change with bug fixes and
+updates.
+
 
 Installation
 ------------

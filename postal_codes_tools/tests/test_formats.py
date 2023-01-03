@@ -1,7 +1,12 @@
 import pytest
 
-from postal_codes_tools.postal_codes import verify_postal_code_format, country_without_postal_code, has_postal_code, \
-    get_countries_without_postal_code, get_postal_code_regex
+from postal_codes_tools.postal_codes import (
+    verify_postal_code_format,
+    country_without_postal_code,
+    has_postal_code,
+    get_countries_without_postal_code,
+    get_postal_code_regex,
+)
 
 
 def test_verify_postal_code_formats():

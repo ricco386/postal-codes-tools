@@ -1,7 +1,6 @@
 import re
 
-from .formats_constants import COUNTRIES_WITHOUT_POSTAL_CODE_SYSTEM, POSTAL_CODES_REGEX, \
-    STRICT_TERRITORY_POSTAL_CODES_REGEX
+from .formats_constants import COUNTRIES_WITHOUT_POSTAL_CODE_SYSTEM, POSTAL_CODES_REGEX, STRICT_TERRITORY_POSTAL_CODES_REGEX
 
 
 def country_without_postal_code(country_iso2: str) -> bool:
