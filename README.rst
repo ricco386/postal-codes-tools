@@ -9,7 +9,7 @@ if it matches the postal code format.
 
 Postal code format checking is based on European Central Bank - `List of postal code formatting rules and regular
 expressions per country <https://www.ecb.europa.eu/stats/money/aggregates/anacredit/shared/pdf/List_postal_code_formatting_rules_and_regular_expressions.xlsx>`_
-spreadsheet.
+spreadsheet version 1.1.
 
 
 Installation

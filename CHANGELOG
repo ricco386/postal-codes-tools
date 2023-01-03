@@ -1,3 +1,13 @@
+# Release 1.1.0
+
+* Updated documentation with library usage
+* Added Country territorry mappers
+* Added ability to do a strict check for territories
+* Updated tests with real examples of postal codes
+* Sorted Regex (+tests) alphabetically,
+* Updated Regex according ECB xls v1.1
+* Added GitHub Actions
+
 # Release 1.0.0
 
 * Postal code technical validation
