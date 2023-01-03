@@ -315,6 +315,33 @@ def test_countries_with_postal_code():
     assert verify_postal_code_format(country_iso_code="SJ", postal_code="9171") is True
 
 
+def test_countries_with_postal_code():
+    # Aland Islands (Finland system)
+    assert verify_postal_code_format(country_iso_code="AX", postal_code="22100", strict=True) is True
+    # french territories
+    assert verify_postal_code_format(country_iso_code="BL", postal_code="97133", strict=True) is True
+    assert verify_postal_code_format(country_iso_code="GF", postal_code="97310", strict=True) is True
+    assert verify_postal_code_format(country_iso_code="GP", postal_code="97122", strict=True) is True
+    assert verify_postal_code_format(country_iso_code="MC", postal_code="98000", strict=True) is True
+    assert verify_postal_code_format(country_iso_code="MF", postal_code="97150", strict=True) is True
+    assert verify_postal_code_format(country_iso_code="MQ", postal_code="97212", strict=True) is True
+    assert verify_postal_code_format(country_iso_code="PM", postal_code="97500", strict=True) is True
+    assert verify_postal_code_format(country_iso_code="RE", postal_code="97450", strict=True) is True
+    assert verify_postal_code_format(country_iso_code="YT", postal_code="97600", strict=True) is True
+    # end of french territories
+    # Western Sahara (Morocco system)
+    assert verify_postal_code_format(country_iso_code="EH", postal_code="70000", strict=True) is True
+    assert verify_postal_code_format(country_iso_code="EH", postal_code="71000", strict=True) is True
+    # Puerto Rico (US system)
+    assert verify_postal_code_format(country_iso_code="PR", postal_code="00716", strict=True) is True
+    assert verify_postal_code_format(country_iso_code="PR", postal_code="00601", strict=True) is True
+    assert verify_postal_code_format(country_iso_code="PR", postal_code="00716-9999", strict=True) is True
+    # Svaldbard and Jan Mayen (Norway system)
+    assert verify_postal_code_format(country_iso_code="SJ", postal_code="8099", strict=True) is True
+    assert verify_postal_code_format(country_iso_code="SJ", postal_code="9170", strict=True) is True
+    assert verify_postal_code_format(country_iso_code="SJ", postal_code="9171", strict=True) is True
+
+
 def test_countries_without_postal_code():
     assert country_without_postal_code("AE") is True
     assert country_without_postal_code("AO") is True

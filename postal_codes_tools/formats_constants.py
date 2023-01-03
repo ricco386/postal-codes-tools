@@ -207,6 +207,28 @@ POSTAL_CODES_REGEX = {
     "SJ": r"^\d{4}$",
 }
 
+STRICT_TERRITORY_POSTAL_CODES_REGEX = {
+    # Aland Islands (Finland system)
+    "AX": r"^22\d{3}$",
+    # french territories
+    "BL": r"^(9709\d{1})|97133$",
+    "GF": r"^973\d{2}$",
+    "GP": r"^97[0-1]\d{2}$",
+    "MC": r"^980\d{2}$",
+    "MF": r"^97[0-1]\d{2}$",
+    "MQ": r"^972\d{2}$",
+    "PM": r"^975\d{2}$",
+    "RE": r"^(974|977|978)\d{2}$",
+    "YT": r"^(976|985)\d{2}$",
+    # end of french territories
+    # Western Sahara (Morocco system)
+    "EH": r"^7\d{4}$",
+    # Puerto Rico (US system)
+    "PR": r"^00\d{3}(-\d{4})?$",
+    # Svaldbard and Jan Mayen (Norway system)
+    "SJ": r"^8099|(917[0-1])$",
+}
+
 # Countries without postal code system
 # In ECB spreadsheet default REGEX was added and no example (same behaviour)
 # Countries that have example, will match default REGEX
