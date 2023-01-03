@@ -1,4 +1,4 @@
-DEFAULT_REGEX = "[^+,]{1,255}$"
+DEFAULT_REGEX = ".{1,255}$"
 
 POSTAL_CODES_REGEX = {
     "AD": r"^AD\d{3}$",
@@ -72,7 +72,7 @@ POSTAL_CODES_REGEX = {
     "ID": r"^[1-9]\d{4}$",
     "IE": DEFAULT_REGEX,
     "IL": r"^\d{7}$",
-    "IM": r"(^(IM)([0-9][0-9A-HJKPS-UW]?$)|(^[A-HK-Y][0-9][0-9ABEHMNPRV-Y]?) [0-9][ABD-HJLNP-UW-Z]{2}$)",
+    "IM": r"(IM)([0-9][0-9A-HJKPS-UW]?|[A-HK-Y][0-9][0-9ABEHMNPRV-Y]?) [0-9][ABD-HJLNP-UW-Z]{2}",
     "IN": r"^[1-9]\d{5}$",
     "IO": r"^(BB9D 1ZZ)$",
     "IQ": r"^\d{5}$",
@@ -192,7 +192,7 @@ POSTAL_CODES_REGEX = {
     "BL": r"^\d{5}$",
     "GF": r"^\d{5}$",
     "GP": r"^\d{5}$",
-    "MC": r"^\d{5}$",  # Monaco (98000)
+    "MC": r"^\d{5}$",
     "MF": r"^\d{5}$",
     "MQ": r"^\d{5}$",
     "PM": r"^\d{5}$",
