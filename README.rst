@@ -19,6 +19,43 @@ Install the released version::
 
     pip install postal-codes-tools
 
+Usage
+-----
+
+Basic usage is to verify if the postal code has correct format:
+
+    >>> from postal_codes_tools.postal_codes import verify_postal_code_format
+    >>> verify_postal_code_format(country_iso_code="US", postal_code="00716-9999")
+    True
+
+Certain countries (or territories) does not heave posta code, library also provides a check if a country does have
+postal code:
+
+    >>> from postal_codes_tools.postal_codes import country_without_postal_code, has_postal_code
+    >>> country_without_postal_code("DE")
+    False
+    >>> country_without_postal_code("AE")
+    True
+    >>> has_postal_code("DE")
+    True
+    >>> has_postal_code("AE")
+    False
+
+Since version 1.1 of the ECB spreadsheet, ECB does not define countries without postal code, they just gave them
+default regex string `.{1,255}$`, how ever some of those has an example of posta codes. List of countires without
+postal code matches the list of default regex without an example of postal code.
+
+Library provide a map of territories, so you can easily find out to which country they belong. If the country code
+is not in the map, original country code is returned. For example Martinique (ISO2 country code: MQ) is overseas
+department of France in the Caribbean:
+
+    >>> from postal_codes_tools.mappers import territory_to_parent_mapper
+    >>> territory_to_parent_mapper('MQ')
+    'FR'
+    >>> territory_to_parent_mapper('FR')
+    'FR'
+
+
 Development
 -----------
 
