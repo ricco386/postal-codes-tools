@@ -28,8 +28,8 @@ Basic usage is to verify if the postal code has correct format:
     >>> verify_postal_code_format(country_iso_code="US", postal_code="00716-9999")
     True
 
-Certain countries (or territories) does not heave posta code, library also provides a check if a country does have
-postal code:
+Certain countries does not heave posta code, library also provides a check if a country does have
+postal code. You can also get the whole list of countries does not heave posta code:
 
     >>> from postal_codes_tools.postal_codes import country_without_postal_code, has_postal_code
     >>> country_without_postal_code("DE")
@@ -40,6 +40,11 @@ postal code:
     True
     >>> has_postal_code("AE")
     False
+    >>>
+    >>> from postal_codes_tools.postal_codes import get_countries_without_postal_code
+    >>> get_countries_without_postal_code()
+    ('AE', 'SB', 'GY', 'UG', 'SL', 'KM', 'CK', 'UM', 'KI', 'TK', 'BO', 'DJ', 'GD', 'BQ', 'GQ', 'CF', 'MR', 'SY', 'SX', 'GH', 'ST', 'ZW', 'BZ', 'BJ', 'RW', 'BI', 'AO', 'TL', 'CD', 'CM', 'QA', 'SC', 'TV', 'KP', 'AW', 'CG', 'TD', 'XX', 'BV', 'ML', 'TG', 'ER', 'FJ', 'TO', 'BS', 'GA', 'CI', 'YE', 'CW', 'DM', 'SR', 'VU', 'GM', 'BW')
+
 
 Since version 1.1 of the ECB spreadsheet, ECB does not define countries without postal code, they just gave them
 default regex string `.{1,255}$`, how ever some of those has an example of posta codes. List of countires without
@@ -54,6 +59,17 @@ department of France in the Caribbean:
     'FR'
     >>> territory_to_parent_mapper('FR')
     'FR'
+
+Library provides a function to get the regex used for postal code verification and also supports strict postal code
+checks for territories:
+
+    >>> from postal_codes_tools.postal_codes import get_postal_code_regex
+    >>> get_postal_code_regex('US')
+    '^\\d{5}(-\\d{4})?$'
+    >>> get_postal_code_regex('MQ')
+    '^\\d{5}$'
+    >>> get_postal_code_regex('MQ', strict=True)
+    '^972\\d{2}$'
 
 
 Development
