@@ -51,7 +51,7 @@ postal code. You can also get the whole list of countries does not heave posta c
 
 
 Since version 1.1 of the ECB spreadsheet, ECB does not define countries without postal code, they just gave them
-default regex string `.{1,255}$`, how ever some of those has an example of posta codes. List of countires without
+default regex string `^.{1,255}$`, how ever some of those has an example of posta codes. List of countires without
 postal code matches the list of default regex without an example of postal code.
 
 Library provide a map of territories, so you can easily find out to which country they belong. If the country code

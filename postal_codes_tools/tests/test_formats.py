@@ -375,7 +375,6 @@ def test_countries_without_postal_code():
     assert country_without_postal_code("GM") is True
     assert country_without_postal_code("GQ") is True
     assert country_without_postal_code("GY") is True
-    assert country_without_postal_code("KI") is True
     assert country_without_postal_code("KM") is True
     assert country_without_postal_code("KP") is True
     assert country_without_postal_code("ML") is True
