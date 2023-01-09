@@ -12,7 +12,7 @@ expressions per country <https://www.ecb.europa.eu/stats/money/aggregates/anacre
 spreadsheet version 1.1.
 
 Intention of the library is to keep version number same as the ECB spreadsheet, eg. v1.1.0, so it is easy the track
-regex and ECB changes in the spreadsheet change log. Just the last number, eg. v1.1.1 can change with bug fixes and
+regex and ECB changes in the spreadsheet change log. Just the last number, eg. v1.1.2 can change with bug fixes and
 updates.
 
 

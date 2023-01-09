@@ -1,3 +1,9 @@
+# Release 1.1.2
+
+* Updated supported Python versions from 3.7 to 3.11
+* BUG: Removed KI from countries without postal codes
+* Minor REGEX updates to be consistent in whole list (backwards compatible change)
+
 # Release 1.1.1
 
 * Added a few examples in library usage
