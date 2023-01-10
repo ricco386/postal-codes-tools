@@ -319,7 +319,7 @@ def test_countries_with_postal_code():
     assert verify_postal_code_format(country_iso2="SJ", postal_code="9171") is True
 
 
-def test_countries_with_postal_code():
+def test_countries_with_postal_code_strict():
     # Aland Islands (Finland system)
     assert verify_postal_code_format(country_iso2="AX", postal_code="22100", strict=True) is True
     # french territories
