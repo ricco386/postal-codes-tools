@@ -200,9 +200,9 @@ POSTAL_CODES_REGEX = {
     "YT": r"^\d{5}$",
     # end of french territories
     # Western Sahara (Morocco system)
-    "EH": r"^\d{5}$",
+    "EH": r"^[1-9]\d{4}$",
     # Puerto Rico (US system)
-    "PR": r"^[0-9]{5}(?:-[0-9]{4})?$",
+    "PR": r"^\d{5}(-\d{4})?$",
     # Svaldbard and Jan Mayen (Norway system)
     "SJ": r"^\d{4}$",
 }
